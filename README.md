@@ -3,4 +3,4 @@ HW 6 - Weather Dashboard
 
 Simple weather dashboard using javascript, OpenWeather, and MapQuest APIs.
 
-http://baiterade.github.io/WhetherChanel/
+https://baiterade.github.io/WhetherChanel/
