@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+  <title>Weather Dashboard</title>
+</head>
+
+<body class="bg-dark">
+  <h1 class="text-center text-light m-3">Weather Dashboard</h1>
+  <div class="row justify-content-center">
+    <div class="sidebar border rounded col-2 m-3">
+      <div class="search border-bottom m-3 p-2">
+        <label for="city-input" class="form-label text-light my-2">Search for a city:</label>
+        <input class="form-control my-2" id="city-input" />
+        <button type="submit" class="btn btn-primary my-2" id="searchButton">Search</button>
+      </div>
+      <div class="history m-3 card bg-dark">
+        <button class="histButton m-2" id="hist1">atlanta</button>
+        <button class="histButton m-2" id="hist2">austin</button>
+        <button class="histButton m-2" id="hist3">new york</button>
+        <button class="histButton m-2" id="hist4">phoenix</button>
+        <button class="histButton m-2" id="hist5">san antonio</button>
+      </div>
+    </div>
+    <div class="weather border rounded col-9 m-3 p-3">
+      <div class="row m-4 justify-content-center">
+        <div class="col-4 card p-4">
+          <h3 class="card-title" id="currentCity">No Location Selected</h3>
+          <img class="bg-secondary rounded m-2" id="currentIcon" width=100 height=100>
+          <div class="list-group">
+            <li id="currentTemp"></li>
+            <li id="currentWind"></li>
+            <li id="currentHum"></li>
+            <li id="currentUV"></li>
+          </div>
+        </div>
+      </div>
+      <div class="row m-4 justify-content-center">
+        <h5 class="card-title text-light m-2">5-Day Forecast</h5>
+        <div class="forecast row bg-dark border-light"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
